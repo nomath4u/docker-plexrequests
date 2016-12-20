@@ -31,5 +31,6 @@ chmod -R g+rw /config
 
 echo "Updating meteor. . . may take a while if meteor servers are being slow. The web gui will not go up until update is completed and there will be another message about PlexRquests starting"
 /sbin/setuser nobody meteor update --release 1.3.5.1
+meteor npm install --save babel-runtime
 echo "Starting PlexRequests. The web gui will be up once the message 'App running at: http://localhost' is displayed"
 /sbin/setuser nobody meteor &
